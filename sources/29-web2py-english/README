@@ -17,15 +17,15 @@
 [x] new syntax: db.mytable.insert(myuploadfield=open(....)), thank you Iceberg
 [x] db(...).select(db.mytable.myfield.count(distinct=True))
 [x] db(db.a)._update(name=db(db.b.a==db.a.id).nested_select(db.b.id))
-[ ] db.mytable.myfield.filter_in, filter_out
-[ ] db.mytable._enable_record_versioning(db) adds versioning to this table
-[x] teradata adapter, thanks Andrew Willimott
+[x] db.mytable.myfield.filter_in, filter_out
+[x] db.mytable._enable_record_versioning(db) adds versioning to this table
+[x] Teradata adapter, thanks Andrew Willimott
 [x] experimental Sybase Adapter
 [x] added db.table.field.avg()
 [ ] Support for Google App Engine projections, thanks Christian
 [x] Field(... 'upload', default=path) now accepts a path to a local file as default value, if user does not upload a file. Relative path looks inside current application folder, thanks Marin
 [x] executesql(...,fields=,columns=) allows parsing of results in Rows, thanks Anthony
-[ ] Rows.find(lambda row: bool(), limitby=(0,1))
+[x] Rows.find(lambda row: bool(), limitby=(0,1))
 
 ### Auth improvements
 
@@ -39,7 +39,7 @@
 
 ### Form improvements
 
-[ ] FORM.confirm('Are you sure?',{'Back':URL(...)})
+[x] FORM.confirm('Are you sure?',{'Back':URL(...)})
 [x] SQLFORM.dictform(dict)
 [x] form.add_button(value,link)
 [x] SQLFORM.grid(groupby='...')
@@ -48,7 +48,7 @@
 
 ### Admin improvements
 
-[ ] new admin pages: manage_students, bulk_regsiter, and progress reports
+[ ] new admin pages: manage_students, bulk_register, and progress reports
 [ ] experimental Git integration
 [ ] experimental OpenShift deployment
 [ ] multi-language pluralization engine 
@@ -79,11 +79,11 @@
 
 ### Other Improvements 
 
-[ ] gluon/contrib/webclient.py makes it easy to create functional tests for app
+[x] gluon/contrib/webclient.py makes it easy to create functional tests for app
 [ ] DIV(..).elements(...replace=...), thanks Anthony
 [x] new layout based on Twitter Bootstrap
 [x] New generic views: generic.ics (Mac Mail Calendar) and generic.map (Google Maps)
-[ ] request.args(0,default=0, cast=int, otherwise=URL(...)), thanks Anthony
+[x] request.args(0,default=0, cast=int, otherwise=URL(...)), thanks Anthony
 [x] redirect(...,type='auto') will be handled properly in ajax responses
 [x] routes in can redirect outside with routes_in=[('/path','303->http://..')]
 [ ] better memcache support
@@ -95,30 +95,29 @@
 [ ] gluon.cache.lazy_cache decorator allows caching functions in modules
 [x] .coffee and .less support in response.files, thanks Sam Sheftel
 [x] ldap certificate support
-[ ] pg8000 postgresql driver support (experimental)
+[x] pg8000 postgresql driver support (experimental)
 [ ] @cache('%(name)s%(args)s%(vars)s',5) and cache.autokey
 [ ] added tox.ini, thanks Marc
 [ ] web2py.py --run_system_tests, thanks Marc Abramowitz
 [ ] html.py (and web2py helpers) can be used without web2py dependencies
-[ ] new fpdf, thanks Mariano
-
+[x] new fpdf, thanks Mariano
 
 ## 1.99.5-1.99.7
 [ ] admin in Russian (Bulat), Japanese (Omi) and Slovenian (Robert Valentak)
 [ ] included web-based debugger (experimental, thanks Mariano)
 [ ] def index(): return dict(a=gluon.tools.Expose(folder))
-[ ] db.table.field.like(...,case_sensitive=False) (thanks Floyd)
+[x] db.table.field.like(...,case_sensitive=False) (thanks Floyd)
 [x] db.table.field.regexp(...) for sqlite and postgres
-[ ] db(...,ignore_common_filters=True)
+[x] db(...,ignore_common_filters=True)
 [x] db(db.dog_id.belongs(db.dogs.owner=='james')).select()
 [ ] db(...).select().group_by_value(db.table.field) (thanks Yair)
 [x] db = DAL('imap://user:password@server:port') support (thanks Alan Etkin)
-[x] db = DAL('teradata://DSN=dsn;UID=user;PWD=pass; DATABASE=database') (thanks Adrew Willmott)
+[x] db = DAL('teradata://DSN=dsn;UID=user;PWD=pass; DATABASE=database') (thanks Andrew Willmott)
 [x] db = DAL('mongodb://127.0.0.1:5984/db') (experimental, thanks Mark Breedveld)
 [x] db = DAL('cubrid')  (experimental)
 [x] db = DAL('postgres:pg8000:...') and DAL('postgres:psycopg2:...')
 [x] pg8000 now ships with web2py (thanks Mariano) 
-[x] reponse.delimiters = ('\\[','\\]') (thanks Denes)
+[x] response.delimiters = ('\\[','\\]') (thanks Denes)
 [ ] auth.user_groups stores user groups
 [ ] auth.is_impersonating()
 [ ] populate can now deal with computed fields (thanks Tsvi Mostovicz)
@@ -128,7 +127,7 @@
 [ ] improved ldap support (thanks Omi)
 [ ] added TimeCollector (thanks Caleb)
 [ ] better cpdb.py (thanks pasxidis)
-[x] conditional menu items (reponse.menu=[(title,bool,link,[],condition)]
+[x] conditional menu items (response.menu=[(title,bool,link,[],condition)]
 [ ] scripts/services/service.py (thanks Ross)
 [ ] gluon/contrib/login_methods/browserid_account.py (thanks Pai)
 [ ] gluon/contrib/htmlmin.py for html minimization (thanks kerncece)

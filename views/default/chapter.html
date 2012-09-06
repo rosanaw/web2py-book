@@ -1,7 +1,7 @@
 {{
 left_sidebar_enabled=True
 response.files.append(URL('static','js/jquery.highlight.js'))
-response.files.append(URL('static','js/jquery.scrollTo-1.4.2-min.js'))
+response.files.append(URL('static','js/jquery.scrollTo-min.js'))
 response.files.append(URL('static','js/jquery.toc-0.1.js'))
 response.files.append(URL('static','js/jquery.qtip-1.0.0-rc3.min.js'))
 response.title = info['title']
@@ -10,18 +10,25 @@ response.subtitle = SPAN(info['subtitle']," written by "+(info['authors'] and in
 {{extend 'layout.html'}}
 <style>
 .highlight {background-color: yellow}
-.article h1 { font-size: 32px;}
-.article h2 { font-size: 28px;}
-.article h3 { font-size: 24px;}
-.article h4 { font-size: 20px;}
-.article h5 { font-size: 16px;}
-.article h6 { font-size: 12px;}
+.article h1 { font-size: 32px; padding-top: 1em}
+.article h2 { font-size: 28px; padding-top: 1em}
+.article h3 { font-size: 24px; padding-top: 1em}
+.article h4 { font-size: 20px; padding-top: 1em}
+.article h5 { font-size: 16px; padding-top: 1em}
+.article h6 { font-size: 12px; padding-top: 1em}
 
 .article img {padding-left: 30px; }
 .article p, .article li {text-align: justify;margin-bottom:0.5em;}
 .article li {list-style:circle outside;}
 .article ul {margin-left: 2em;}
 .inxx { background-color: #999999; color: white; position: absolute; right: -100px; white-space: nowrap; font-size: 0.8em; padding: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;}
+.article h1 code, .article h2 code, .article h3 code, .article h4 code, .article h5 code, .article h6 code {
+   display: in-line block;
+   color : inherit;
+   border: 0px;
+   font-size: inherit;
+   background: transparent;
+}
 </style>
 
 {{block header}}
