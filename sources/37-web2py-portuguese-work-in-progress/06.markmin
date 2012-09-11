@@ -1,9 +1,9 @@
-## The database abstraction layer
+## A camada de abstração do banco de dados
 ``DAL``:inxx
 
-### Dependencies
+### Dependências
 
-web2py comes with a Database Abstraction Layer (DAL), an API that maps Python objects into database objects such as queries, tables, and records. The DAL dynamically generates the SQL in real time using the specified dialect for the database back end, so that you do not have to write SQL code or learn different SQL dialects (the term SQL is used generically), and the application will be portable among different types of databases. At the time of this writing, the supported databases are SQLite (which comes with Python and thus web2py), PostgreSQL, MySQL, Oracle, MSSQL, FireBird, DB2, Informix, Ingres, the Google App Engine (SQL and NoSQL) and MongoDB. Experimentally we support more databases. Please check on the web2py web site and mailing list for more recent adapters. Google NoSQL is treated as a particular case in Chapter 13.
+web2py vem com uma camada de abstração do banco de dados (DAL), basicamente é uma API que mapeia os objetos Python em objetos de banco de dados, como consultas, tabelas e registros. A DAL gera dinamicamente o SQL em tempo de execução utilizando um dialeto específico para o back-end do banco de dados, dessa forma você não precisa digitar códigos em SQL ou utilizar alguma linguagem específica de banco de dados, com isso sua aplicação será portável entre diferentes bancos de dados. Atualmente são suportados os seguintes bancos de dados: SQLite (nativo no Python e no web2py), PostgreSQL, MySQL, Oracle, MSSQL, Firebird, DB2, Informix, Ingres, Google App Engine (SQL e NoSQL) e MongoDB. Experimentalmente são suportados mais bancos de dados. Por favor, verifique no site do web2py e na lista de discussão os mais recentes adaptadores. O Google NoSQL é tratado de forma particular no capítulo 13.
 
 The Windows binary distribution works out of the box with SQLite and MySQL. The Mac binary distribution works out of the box with SQLite.
 To use any other database back-end, run from the source distribution and install the appropriate driver for the required back end.
