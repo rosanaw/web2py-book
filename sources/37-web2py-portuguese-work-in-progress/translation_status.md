@@ -12,6 +12,7 @@
 
 - 00.markmin/Introduction - Bruno Rocha <rochacbruno@gmail.com>
 - 01.markmin/Introduction - Relsi H. Maron <relsi@codeupstudio.com.br>
+- 06.markmin/Dependencies -  Cleibson Almeida <contato@cleibsonalmeida.blog.br>
 
 ## DONE
 

@@ -1,15 +1,15 @@
-00: Preface
-01: Introduction
-02: The Python language
-03: Overview
-04: The core
-05: The views
-06: The database abstraction layer
-07: Forms and validators
-08: Email and SMS
-09: Access Control
-10: Services
-11: jQuery and Ajax
-12: Components and plugins
-13: Deployment recipes
-14: Other recipes
+00: Prefácio
+01: Introdução
+02: A linguagem Python
+03: Visão Geral
+04: O core
+05: As views
+06: A camada de abstração do banco de dados
+07: Formulários e Validadores
+08: Email e SMS
+09: Controle de Acesso
+10: Serviços
+11: jQuery e Ajax
+12: Componentes e plugins
+13: Dicas de Implantação
+14: Outras dicas
